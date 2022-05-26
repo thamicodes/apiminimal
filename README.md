@@ -1,2 +1,2 @@
 # apiminimal
-oh deus
+API Minital for exemplo
