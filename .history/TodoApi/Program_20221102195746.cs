@@ -70,7 +70,7 @@ app.MapPut("/todoitems/{id}", async (int id, Todo inputTodo, TodoDb db) =>
 
     return Results.NoContent();
 });
-app.MapGet("/todoitems/numero/{id}", async (int id) =>
+app.MapGet("/todoitems/{id}", async (int id) =>
 {
    id =+ 1;
    return Results.Ok(id);
