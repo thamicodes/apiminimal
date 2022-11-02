@@ -18,7 +18,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.MapGet("/", () => "Sextooooou!");
 
-app.MapGet("/data-only", () => new DateTime());
+app.MapGet("/data-only", () => new DateOnly(2022, 11, 03));
 
 app.MapGet("/time-only", () => new TimeOnly());
 
@@ -32,13 +32,6 @@ app.MapGet("/todoitems/{id}", async (int id, TodoDb db) =>
     await db.Todos.FindAsync(id)
         is Todo todo
             ? Results.Ok(todo)
-           // : Results.NotFound());
-           : Results.NoContent());//204
-           
-             app.MapGet("/todoitems/by-name/{name}", async (string name, TodoDb db) =>
-    await db.Todos.Where(t=> t.Name == name).ToListAsync()
-        is List<Todo> todos
-            ? Results.Ok(todos)
            // : Results.NotFound());
            : Results.NoContent());//204
 
