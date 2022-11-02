@@ -34,13 +34,6 @@ app.MapGet("/todoitems/{id}", async (int id, TodoDb db) =>
             ? Results.Ok(todo)
            // : Results.NotFound());
            : Results.NoContent());//204
-           
-             app.MapGet("/todoitems/by-name/{name}", async (string name, TodoDb db) =>
-    await db.Todos.Where(t=> t.Name == name).ToListAsync()
-        is List<Todo> todos
-            ? Results.Ok(todos)
-           // : Results.NotFound());
-           : Results.NoContent());//204
 
 app.MapPost("/todoitems", async (Todo todo, TodoDb db) =>
 {
