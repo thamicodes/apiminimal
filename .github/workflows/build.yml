@@ -43,6 +43,3 @@ jobs:
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"thamicodes_pocnet6_AYRArQ_hslub7NCAllQr" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="${{ secrets.SONAR_HOST_URL }}"
           dotnet build
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
-      - name: Setup .NET Core SDK
-        uses: actions/setup-dotnet@v3.0.3
-  
