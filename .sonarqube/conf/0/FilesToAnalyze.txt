@@ -1,0 +1,8 @@
+﻿C:\apiminimal\TodoApi\Program.cs
+C:\apiminimal\TodoApi\obj\Debug\net6.0\TodoApi.GlobalUsings.g.cs
+C:\apiminimal\TodoApi\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+C:\apiminimal\TodoApi\obj\Debug\net6.0\TodoApi.AssemblyInfo.cs
+C:\apiminimal\TodoApi\obj\Debug\net6.0\TodoApi.MvcApplicationPartsAssemblyInfo.cs
+C:\apiminimal\TodoApi\appsettings.Development.json
+C:\apiminimal\TodoApi\appsettings.json
+C:\apiminimal\TodoApi\Properties\launchSettings.json
