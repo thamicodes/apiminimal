@@ -44,8 +44,8 @@ app.MapGet("/tarefas/nao-concluidas", async (TarefaDb db) =>
 
 app.MapGet("/tarefa/{id}", async (int id, TarefaDb db) =>
     await db.Tarefas.FindAsync(id)
-        is Tarefa todo
-            ? Results.Ok(todo)
+        is Tarefa tarefa
+            ? Results.Ok(tarefa)
            // : Results.NotFound());
            : Results.NoContent());//204
 
@@ -58,8 +58,8 @@ is List<Tarefa> todos
 
 app.MapPost("/tarefas", async (Tarefa tarefa, TarefaDb db) =>
 {
-    if (!tarefa.IsValid())
-        return Results.UnprocessableEntity();//422
+   var myBinaryFormatter = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
+
 
     db.Tarefas.Add(tarefa);
     await db.SaveChangesAsync();

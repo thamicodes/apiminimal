@@ -1,6 +1,0 @@
-projectKey=thamicodes_apiminimal_AYRAqLhcslub7NCAllQd
-serverUrl=http://localhost:9000
-serverVersion=9.7.1.62043
-dashboardUrl=http://localhost:9000/dashboard?id=thamicodes_apiminimal_AYRAqLhcslub7NCAllQd
-ceTaskId=AYRCe3nsslub7NCAllRG
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AYRCe3nsslub7NCAllRG
