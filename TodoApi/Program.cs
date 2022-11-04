@@ -137,7 +137,6 @@ class TarefaDb : DbContext
     //     modelBuilder.Entity<Tarefa>().HasData(new Tarefa { Nome = "Fazer Code Review", FoiConcluida = false });
     //     modelBuilder.Entity<Tarefa>().HasData(new Tarefa { Nome = "Modelar Banco de Dados", FoiConcluida = true });
     // }
-
 }
 static class teste
 {
